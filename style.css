@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+#filter {
+  display: block;
+  left: 40%;
+  position: relative;
+  cursor: pointer;
+}
+.viewFilters {
+  transition: display 0.5s linear;
+  margin-top: 5px;
+  display: none;
+}
+.viewFilters button {
+  cursor: pointer;
+}
+.view {
+  transition: display 0.5s linear;
+  margin-top: 5px;
+  display: block;
+}
+#testdata {
+  display: block;
+  margin-top: 10px;
+  background-color: red;
+  color: #fff;
+  width: 30%;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+#name,
+#lod {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  background-color: red;
+  width: 50%;
+  font-size: 2em;
+  top: 50%;
+  left: 28%;
+  position: absolute;
+}
+#container {
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
+.input {
+  position: relative;
+  top: 2%;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 10px;
+  border-top: 1px solid black;
+  position: relative;
+  margin-top: 2%;
+  transition: all 0.5s linear;
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  /* font-size: 0.8rem; */
+}
+
+table {
+  width: 99%;
+  transition: all 0.5s linear;
+  border-collapse: collapse;
+  text-align: center;
+}
+#pincode,
+#search,
+select {
+  width: 20%;
+  height: 28px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #1d85ec;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: all 0.5s linear;
+}
+#search {
+  margin-top: 10px;
+  transition: all 0.5s linear;
+}
+#date {
+  width: 20%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 2px solid #1d85ec;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  color: rgb(0, 0, 0);
+  bottom: 0;
+  font-weight: bold;
+  background-color: rgba(4, 240, 228, 0.993);
+}
+.source {
+  position: absolute;
+  left: 5%;
+}
+.power {
+  position: relative;
+  left: 80%;
+}
+a {
+  color: rgb(255, 0, 34);
+}
+#lod {
+  background-color: rgb(255, 0, 34);
+  color: rgb(0, 0, 0);
+}
+select {
+  width: 22.3%;
+  height: 45px;
+}
+@media screen and (max-width: 748px) {
+  #pincode,
+  #date,
+  #search,
+  select {
+    width: 50%;
+    margin-top: 5px;
+  }
+  #search {
+    display: block;
+    width: 55%;
+  }
+  select {
+    width: 59%;
+    height: 10%;
+  }
+  #testdata {
+    width: 80%;
+  }
+  .viewFilters button {
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  #name,
+  #lod {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: red;
+    width: 50%;
+    font-size: 2em;
+    top: 40%;
+    left: 26%;
+    position: absolute;
+  }
+  #lod {
+    background-color: rgba(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  table,
+  td,
+  th {
+    width: 10%;
+    overflow-x: auto;
+  }
+  .source {
+    position: absolute;
+    left: 27.5%;
+    bottom: 0;
+    display: block;
+  }
+  .power {
+    position: absolute;
+    left: 29%;
+    bottom: 40%;
+  }
+  footer {
+    display: block;
+    height: 6%;
+    font-size: 0.9em;
+  }
+  #name,
+  #lod {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: red;
+    width: 50%;
+    font-size: 1.5em;
+    top: 40%;
+    left: 28%;
+    position: absolute;
+  }
+}
+tr:nth-child(even) {
+  background-color: #5c5a5a5b;
+}
+
+tr:hover {
+  background-color: #f3e631fd;
+}
+.lod {
+  color: red;
+  position: relative;
+  left: 40%;
+}

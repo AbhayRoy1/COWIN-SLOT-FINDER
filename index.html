@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Check Your Nearest Vaccination Centre And Slots Availability</title>
+  <style>
+   
+
+    body {
+      
+      background-image: url('/3.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  </style>
+
+</head>
+<link href="./style.css" rel="stylesheet" />
+
+<body>
+
+  <center>
+
+
+    <div id="container">
+
+      <h2 style="font-size:50px;">Check Your Nearest Vaccination Centre And Slots Availability</h2>
+
+      <span><button class="filters" id="filter">Filters</button></span>
+      <div id="viewFilters" class="viewFilters">
+        <button value="18" id="filterAge" onclick="startFilter(this)">
+          18+
+        </button>
+        <button value="covaxin" id="filterCovaxin" onclick="startFilter(this)">
+          Covaxin
+        </button>
+        <button value="covishield" id="filtercovishield" onclick="startFilter(this)">
+          Covishield
+        </button>
+        <button value="sputnik V" id="filtersputnikV" onclick="startFilter(this)">
+          Sputnik V
+        </button>
+        <button value="Free" id="feeFree" onclick="startFilter(this)">
+          Free
+        </button>
+        <button value="All" id="showAll" onclick="startFilter(this)">
+          Show All
+        </button>
+      </div>
+      <div class="input">
+        <form>
+          <h4 style="color: rgb(0, 0, 0)">
+            
+            <u>Search Vaccination Centre By Pincode</u>
+          </h4>
+          <input type="text" id="pincode" placeholder="PINCODE" maxlength="6" autofocus required />
+          <input type="date" id="date" />
+          <h3>(OR)</h3>
+          <h4 style="color: rgb(0, 0, 0)">
+            <u>Search Vaccination Centre By District</u>
+          </h4>
+          <select id="stateList">
+            <option value="null">Select State</option>
+          </select>
+          <select id="district">
+            <option value="null">Please Select State</option>
+          </select>
+          <input type="text" id="search" placeholder="Filter Your Villege/Town/City" />
+          <span id="testdata"></span>
+        </form>
+      </div>
+      <div style="overflow: auto">
+        <table id="mytable">
+          <thead style="background-color: rgba(110, 240, 4, 0.993)">
+            <tr>
+              <th>Date</th>
+              <th>Name Of The Vaccination Centre</th>
+              <th>Address Of The Vaccination Centre</th>
+              <th>Villege/Town/City</th>
+              <th>District</th>
+              <th>State</th>
+              <th>Fee</th>
+              <th>No:Of Sessions</th>
+              <th>Vaccine Name</th>
+              <th>Age Limit</th>
+              <th>Doses Available</th>
+            </tr>
+          </thead>
+          <tbody id="tb"></tbody>
+        </table>
+      </div>
+    </div>
+    <span id="name"></span>
+    <span id="lod"></span>
+
+
+  </center>
+
+
+</body>
+<script src="./script.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YCRZ2NHMHW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-YCRZ2NHMHW');
+</script>
+
+</html>
